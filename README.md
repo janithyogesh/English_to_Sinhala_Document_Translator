@@ -1,37 +1,19 @@
-# English to Sinhala Document Translator
+# 🇱🇰 Sinhala Document and Text Processing Suite
 
-This application translates English documents to Sinhala with OCR support for scanned documents.
+## High-Fidelity English-to-Sinhala Translation and OCR
 
-## Features
+A universal application built with Streamlit for translating English documents to Sinhala and accurately extracting Sinhala text via Optical Character Recognition (OCR). This tool prioritizes correct rendering of complex Sinhala Unicode characters in the downloadable PDF output.
 
-- 📄 Support for multiple file formats: PDF, DOCX, TXT, and images
-- 🔍 OCR support for scanned documents and images
-- 🌐 Automatic translation from English to Sinhala
-- 💾 Download translated text as TXT file
 
-## Supported File Types
 
-- PDF documents (.pdf)
-- Word documents (.docx)
-- Text files (.txt)
-- Images (.jpg, .jpeg, .png, .bmp, .tiff)
+---
 
-## How to Use
+## ✨ Key Features
 
-1. Upload your English document
-2. Enable "Use OCR" option if your document is scanned or image-based
-3. Click "Translate" button
-4. View and download the translated Sinhala text
+* **🌐 English to Sinhala Translation:** Accurate translation powered by the Google Translate API (via `deep-translator`).
+* **📄 Universal Document Support:** Process files including **PDF, DOCX, TXT, JPG, PNG,** and other image formats.
+* **🔎 Sinhala OCR:** Utilize **Tesseract** with the Sinhala language pack (`sin`) to extract text from scanned Sinhala documents and images.
+* **🖋️ High-Fidelity PDF Generation:** Uses **WeasyPrint** (which leverages Pango and HarfBuzz) to ensure correct text shaping and rendering of complex Sinhala Unicode characters in the final PDF output.
+* **☁️ Cloud Native:** Built with **Streamlit** for easy web deployment and accessibility.
 
-## Local Installation
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-## Note
-
-- For OCR functionality, you need Tesseract OCR installed on your system
-- Translation powered by Google Translate
-- Large documents may take longer to process
+---
